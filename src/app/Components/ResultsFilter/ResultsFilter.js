@@ -6,7 +6,7 @@ export default function ResultsFilter() {
   return (
     <ButtonGroup>
       {filters.map((filter) => (
-        <Button>{filter}</Button>
+        <Button key={filter}>{filter}</Button>
       ))}
     </ButtonGroup>
   );

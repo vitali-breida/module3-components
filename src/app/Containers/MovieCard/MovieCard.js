@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 export default function MovieCard(props) {
   return (
     <>
-      <MovieImage url="{props.imageUrl}" />
+      <MovieImage imageUrl={props.imageUrl} />
       <MovieTitle title={props.title} />
       <MovieGenre genre={props.genre} />
       <MovieReleaseDate releaseDate={props.releaseDate} />
@@ -19,9 +19,10 @@ MovieCard.propTypes = {
   title: PropTypes.string.isRequired,
   genre: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
-  releaseDate: PropTypes.number.isRequired
+  releaseDate: PropTypes.string.isRequired
 };
 
 MovieCard.defaultProps = {
-  imageUrl: "some url"
+  imageUrl:
+    "https://s1.livelib.ru/boocover/1000530481/o/10c8/Quentin_Tarantino__Pulp_Fiction_A_Quentin_Tarantino_Screenplay.jpeg"
 };
