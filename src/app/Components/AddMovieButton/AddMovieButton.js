@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 export default function AddMovieButton() {
   return (
     <Box display="flex" justifyContent="flex-end">
-      <Button>Add movie</Button>
+      <Button>+ Add movie</Button>
     </Box>
   );
 }

@@ -3,6 +3,7 @@ import ResultsFilter from "../../Components/ResultsFilter/ResultsFilter";
 import ResultsSort from "../../Components/ResultsSort/ResultsSort";
 import ResultsBody from "../ResultsBody/ResultsBody";
 import Box from "@material-ui/core/Box";
+import ErrorBoundary from "../../Components/ErrorBoundary/ErrorBoundary";
 
 export default function Body() {
   return (
@@ -16,8 +17,10 @@ export default function Body() {
         </Box>
       </Box>
 
-      <ResultsCount />
-      <ResultsBody />
+      <ErrorBoundary>
+        <ResultsCount />
+        <ResultsBody />
+      </ErrorBoundary>
     </>
   );
 }
