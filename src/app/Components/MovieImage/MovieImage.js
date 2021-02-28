@@ -1,7 +1,7 @@
-export default function MovieImage() {
+export default function MovieImage(props) {
   return (
     <>
-      <img alt="Something" src="" />
+      <img alt="Something" src={props.imageUrl} />
     </>
   );
 }

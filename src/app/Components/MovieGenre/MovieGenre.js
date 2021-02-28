@@ -1,2 +1,3 @@
-let MovieGenre = () => <div>Drama, Biography, Music</div>;
-export default MovieGenre;
+export default function MovieGenre(props) {
+  return <div>{props.genre}</div>;
+}

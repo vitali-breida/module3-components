@@ -1,2 +1,3 @@
-let MovieTitle = () => <div>Pulp Fiction</div>;
-export default MovieTitle;
+export default function MovieTitle(props) {
+  return <div>{props.title}</div>;
+}
